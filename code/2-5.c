@@ -3,9 +3,9 @@
 int main() {
     int arr[6] = {1,2,3,4,5,6};
     int *p = arr;
-    int **p = &p;
+    int **pp = &p;
 
     for(int i = 0; i < 6; i++){
-        printf("%d ", **(p + i));
+        printf("%d ", *(*pp + i));
     }
 }
